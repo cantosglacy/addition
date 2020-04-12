@@ -1,0 +1,176 @@
+html {
+  margin: 0;
+  height: 100%;
+  background: radial-gradient(black, white); }
+
+#container {
+  margin: 20px auto;
+  width: 900px;
+  height: 550px;
+  background-color: black;
+  position: relative;
+  padding: 20px; }
+  #container #correct {
+    background-color: #3fd63f;
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    top: 50px;
+    left: 350px;
+    border-radius: 4px;
+    box-shadow: 0px 4px #155a04;
+    -webkit-box-shadow: 0px 4px #155a04;
+    -moz-box-shadow: 0px 4px #155a04;
+    display: none; }
+  #container #wrong {
+    display: none;
+    top: 50px;
+    font-size: 20px;
+    left: 500px;
+    background-color: #e06c6c;
+    position: absolute;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px #520101;
+    -webkit-box-shadow: 0px 4px #520101;
+    -moz-box-shadow: 0px 4px #520101; }
+  #container #score {
+    position: absolute;
+    color: white;
+    background-color: #f7a6c8;
+    padding: .2em 1.5em;
+    top: 70px;
+    left: 690px;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0px 4px #763a54;
+    -webkit-box-shadow: 0px 4px #763a54;
+    -moz-box-shadow: 0px 4px #763a54; }
+
+#question {
+  color: #640736;
+  font-family: cursive,sans-serif;
+  text-align: center;
+  background-color: #ee5294;
+  height: 100px;
+  width: 550px;
+  margin: 100px auto 0px auto;
+  padding: 20px;
+  font-size: 100px;
+  line-height: .85em;
+  box-shadow: 0px 4px #763a54;
+  -webkit-box-shadow: 0px 4px #763a54;
+  -moz-box-shadow: 0px 4px #763a54; }
+
+#instruction {
+  padding: 0 20px;
+  text-align: center;
+  line-height: 2.7em;
+  width: 550px;
+  height: 48px;
+  font-size: 16px;
+  margin: 0    auto 0px auto;
+  background-color: #fcb7ee;
+  box-shadow: 0px 4px #763a54;
+  -webkit-box-shadow: 0px 4px #763a54;
+  -moz-box-shadow: 0px 4px #763a54; }
+
+#choices {
+  background-color: #b9b4b4;
+  height: 220px;
+  width: 590px;
+  margin: 04px    auto 0px auto; }
+
+.box {
+  transition: .5s;
+  background-color: white;
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 3.5em;
+  font-size: 35px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 4px #763a54;
+  -webkit-box-shadow: 0px 4px #763a54;
+  -moz-box-shadow: 0px 4px #763a54;
+  cursor: pointer;
+  transition: all .2s; }
+  .box:hover {
+    background-color: #ac054d;
+    box-shadow: 0px 4px white;
+    -webkit-box-shadow: 0px 4px white;
+    -moz-box-shadow: 0px 4px white; }
+  .box:active {
+    top: 4px;
+    box-shadow: 0px 4px #763a54;
+    -webkit-box-shadow: 0px 4px #763a54;
+    -moz-box-shadow: 0px 4px #763a54; }
+
+#box1 {
+  margin-left: 10px; }
+
+#box4 {
+  margin-right: 0; }
+
+.clear {
+  clear: both; }
+
+#startReset {
+  background-color: #ee5294;
+  padding: 10px;
+  width: 120px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px #763a54;
+  -moz-box-shadow: 0px 4px #763a54;
+  -webkit-box-shadow: 0px 4px #763a54; }
+  #startReset:hover {
+    color: #763a54;
+    background-color: white;
+    box-shadow: 0px 4px #763a54;
+    -webkit-box-shadow: 0px 4px #763a54;
+    -moz-box-shadow: 0px 4px #763a54;
+    transition: .3s; }
+  #startReset:active {
+    top: 4px;
+    box-shadow: 0px 4px #763a54;
+    -webkit-box-shadow: 0px 4px #763a54;
+    -moz-box-shadow: 0px 4px #763a54; }
+
+.timeRemain {
+  padding: 3px;
+  background-color: #f50e72;
+  text-align: center;
+  width: 150px;
+  left: 600px;
+  top: 485px;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 15px;
+  box-shadow: 0px 4px #27101a;
+  -moz-box-shadow: 0px 4px #27101a;
+  -webkit-box-shadow: 0px 4px #27101a;
+  display: none; }
+
+#gameover {
+  width: 400px;
+  height: 190px;
+  background: linear-gradient(white, #fc078d);
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  border-radius: 4px;
+  text-align: center;
+  display: none;
+  font-size: 40px;
+  left: 270px;
+  box-shadow: 0px 10px #775d68;
+  -webkit-box-shadow: 0px 10px #775d68;
+  -moz-box-shadow: 0px 10px #775d68; }
